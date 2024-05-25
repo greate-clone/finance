@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1716601184182,
+      "tag": "0000_young_odin",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1716602157174,
+      "tag": "0001_mixed_prowler",
+      "breakpoints": true
+    }
+  ]
+}

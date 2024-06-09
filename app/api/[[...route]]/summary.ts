@@ -97,7 +97,7 @@ const app = new Hono().get(
     const category = await db
       .select({
         name: categories.name,
-        value: sql`SUM(${transactions.amount})`.mapWith(Number),
+        value: sql`SUM(ABS(${transactions.amount}))`.mapWith(Number),
       })
       .from(transactions)
       .innerJoin(accounts, eq(transactions.accountId, accounts.id))
